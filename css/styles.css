@@ -1,24 +1,21 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .header, .section-one {
     background-color: #1f2937;
 }
 
-.header-container, .section-one-container {
+.header-container {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-.section-one-container {
-    padding: 0 50px;
 }
 
 .logo-text {
@@ -46,18 +43,16 @@ a {
     margin-left: 16px;
 }
 
-.section-one-container {
+
+.section-one {
+    display: flex;
+    justify-content: center;
     padding: 50px 0;
 }
 
 .content {
-    width: 50%;
-}
-
-.main-img {
-    width: 50%;
-    background-color: #E5E7EB;
-    height: 200px;
+    max-width: 450px;
+    padding-right: 32px;
 }
 
 h1 {
@@ -69,6 +64,7 @@ h1 {
 .content p {
     font-size: 18px;
     color: #E5E7EB;
+    margin-bottom: 8px;
 }
 
 .btn-primary {
@@ -76,4 +72,62 @@ h1 {
     color: #F9FAF8;
     padding: 4px 16px;
     border-radius: 5px;
+}
+
+.main-img {
+    width: 450px;
+    height: 200px;
+    background-color: #E5E7EB;
+}
+
+.cards-section {
+    padding: 32px 0;
+}
+h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 32px;
+    padding-bottom: 32px;
+}
+
+.image {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    margin-bottom: 8px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 32px;
+    font-style: italic;
+    max-width: 700px;
+}
+
+.author {
+    /* align-self: right; */
 }
